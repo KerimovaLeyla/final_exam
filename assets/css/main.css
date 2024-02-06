@@ -1,0 +1,595 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#carusel {
+  position: relative;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  height: auto;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: white;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+header a {
+  color: white;
+  transition: 0.5s;
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+}
+header a:hover {
+  color: #BE9C79;
+}
+header a:hover::after {
+  opacity: 1;
+  transition: 1s;
+  width: 100%;
+}
+header a::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  width: 0;
+  background-color: #BE9C79;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+}
+header img {
+  max-width: 100%;
+}
+header .navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-size: 17px;
+  margin-right: 20px;
+  font-family: Marcellus;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+header .navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+}
+header nav {
+  width: 98%;
+  height: auto;
+  margin: auto;
+}
+header nav .icon {
+  cursor: pointer;
+}
+header nav .collapseDiv {
+  justify-content: flex-end;
+}
+header nav .icon {
+  margin: 0px 20px;
+  color: white;
+}
+
+.fa-solid {
+  margin: 0px 10px;
+}
+
+@media screen and (max-width: 991px) {
+  header .navbar {
+    background-color: #f2ede8;
+  }
+  header .navbar-light .navbar-nav .nav-link {
+    color: #BE9C79;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  header nav .icon {
+    display: none;
+  }
+  header .navbar-toggler-icon {
+    border: none;
+    color: #BE9C79;
+  }
+  header img {
+    width: 200px;
+    filter: grayscale(450px);
+  }
+}
+#coffeCulture {
+  height: auto;
+  padding: 30px 0px;
+  background-image: url(/assets/img/main-bg-pattern.png);
+}
+#coffeCulture img {
+  max-width: 100%;
+}
+#coffeCulture .coffegame img {
+  margin: 20px 0px;
+}
+#coffeCulture .coffegame span {
+  font-weight: 700;
+  font-size: 18px;
+  color: #86996c;
+  line-height: 16px;
+  font-family: "Quattrocento Sans";
+  letter-spacing: 1.8px;
+  margin: 30px;
+}
+#coffeCulture .coffegame p {
+  font-weight: 500;
+  font-size: 57.001px;
+  color: #d75732;
+  font-family: "Cormorant Garamond";
+  margin: 30px;
+}
+#coffeCulture .coffegameone img {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+#coffeCulture .coffegameone p {
+  margin-top: 30px;
+  padding-top: 30px;
+  font-weight: 400;
+  font-size: 27px;
+  margin-left: 30px;
+  color: #442916;
+  font-family: "Quattrocento Sans";
+}
+
+#perfectCoffe {
+  padding: 30px 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/img/new-img-02.jpg") center/cover no-repeat fixed;
+  text-align: center;
+}
+#perfectCoffe .craft {
+  height: 400px;
+  margin: 30px 0px;
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#perfectCoffe span {
+  margin-top: 30px;
+  padding-top: 30px;
+  font-weight: 700;
+  font-size: 13px;
+  color: #f9f7f7;
+  line-height: 16px;
+  font-family: "Quattrocento Sans";
+  letter-spacing: 1.8px;
+}
+#perfectCoffe h1 {
+  font-weight: 500;
+  font-size: 57.001px;
+  color: #f9f7f7;
+  line-height: 57.001px;
+  font-family: "Cormorant Garamond";
+  width: 80%;
+}
+#perfectCoffe p {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 17px;
+  color: #cfc8b8;
+  line-height: 27.88px;
+  font-family: "Quattrocento Sans";
+  letter-spacing: 0;
+}
+
+#ourCoffe {
+  height: auto;
+  padding: 20px 15px;
+}
+#ourCoffe img {
+  max-width: 100%;
+}
+#ourCoffe .headTxt {
+  text-align: center;
+}
+#ourCoffe .headTxt p {
+  font-weight: 700;
+  font-size: 18px;
+  color: #86996c;
+  line-height: 16px;
+  font-family: "Quattrocento Sans";
+  letter-spacing: 1.8px;
+  margin: 30px;
+}
+#ourCoffe .headTxt h3 {
+  font-weight: 500;
+  font-size: 57.001px;
+  color: #d75732;
+  font-family: "Cormorant Garamond";
+  margin: 30px;
+}
+#ourCoffe .col-12 {
+  padding: 9px;
+}
+#ourCoffe .drinkCoffe {
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+}
+#ourCoffe .drinkCoffe .coffeType {
+  position: absolute;
+  padding: 3px 15px;
+  margin: 0px 0px 10px 10px;
+  background-color: white;
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1);
+}
+#ourCoffe .drinkCoffe .coffeType a {
+  color: #D75732;
+  font-family: "Quattrocento Sans";
+  padding: 0;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-decoration: none;
+  list-style: none;
+}
+#ourCoffe .drinkCoffe .coffeType p {
+  padding: 0;
+  margin: 0;
+  font-family: "Quattrocento Sans";
+}
+#ourCoffe .best {
+  margin: 30px;
+  padding: 30px;
+  border: 2px solid #C6A180;
+}
+#ourCoffe .best h2 {
+  margin-top: 20px;
+  font-size: 45px;
+  font-family: "Quattrocento Sans";
+  color: #C6A180;
+}
+#ourCoffe .best h1 {
+  font-size: 50px;
+  font-family: "Cormorant Garamond";
+  margin-bottom: 20px;
+}
+#ourCoffe .best .fa-solid {
+  padding-left: 15px;
+  color: #C6A180;
+  font-size: 40px;
+}
+
+#perfection {
+  text-align: center;
+}
+#perfection img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+#perfection span {
+  font-weight: 700;
+  font-size: 16px;
+  color: #e2562d;
+  line-height: 16px;
+  font-family: "Quattrocento Sans";
+  letter-spacing: 1.8px;
+  margin: 30px 0px;
+  padding: 30px 0px;
+}
+#perfection p {
+  font-weight: 500;
+  font-size: 47.005px;
+  color: #f9f7f7;
+  line-height: 47.9921px;
+  font-family: "Cormorant Garamond";
+  margin: 30px 0px;
+  padding: 30px 0px;
+}
+
+#menu {
+  height: auto;
+  padding: 30px 0px;
+  background-image: url("/assets/img/h2-box-background2.jpg");
+  margin-bottom: 30px;
+}
+#menu .row {
+  justify-content: center;
+}
+#menu .ourMenu {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#menu button {
+  padding: 8px 15px;
+  border: 2px solid #5e3912;
+  background-color: #BE9C79;
+  color: white;
+  font-family: Lato;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+#menu .exploreMenu {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#menu .exploreMenu h1 {
+  padding: 30px 0px;
+  color: #BE9C79;
+  font-family: "Cormorant Garamond";
+}
+#menu img {
+  cursor: pointer;
+  max-width: 100%;
+}
+#menu .menuItem {
+  margin-right: 5px;
+}
+#menu .menuItem span {
+  font-weight: 400;
+  font-size: 20px;
+  color: #262626;
+  line-height: 30px;
+  transform: uppercase;
+  font-family: Marcellus;
+  letter-spacing: 1px;
+  margin-left: 20px;
+}
+#menu .menuItem p {
+  font-weight: 300;
+  font-size: 15px;
+  color: #262626;
+  line-height: 18px;
+  font-family: "Open Sans";
+  margin-left: 20px;
+  margin-top: 5px;
+}
+#menu .dashed {
+  height: 3px;
+  border-bottom: 1px dashed #939393;
+  display: table-cell;
+  width: 95%;
+  z-index: 1;
+  position: relative;
+  top: 9px;
+  margin-left: 20px;
+}
+
+.menuCost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+@media screen and (max-width: 991px) {
+  #menu .ourMenu img {
+    display: none;
+  }
+}
+#bean {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0px;
+  padding: 30px 0px;
+}
+#bean img {
+  width: 350px;
+  cursor: pointer;
+  height: 350px;
+}
+#bean .coffebeanitem {
+  font-family: Lato;
+}
+#bean .coffebeanitem p a {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+#bean .coffebeanitem p a:hover {
+  text-decoration: none;
+}
+#bean .coffebeanitem span {
+  color: rgb(185, 176, 176);
+}
+#bean .coffeBean {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/img/image-356-840x1260.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#bean .coffeBeanone {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/img/image-181-840x1260.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#bean .coffeBeantwo {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/img/image-177-840x560.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer {
+  padding: 30px 0px;
+  height: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/img/new-bg-footer.jpg");
+}
+footer .footPiece {
+  margin-top: 30px;
+  padding-top: 30px;
+  cursor: pointer;
+}
+footer .theme {
+  color: #E6A347;
+  margin-left: 20px;
+}
+footer .reserv {
+  color: white;
+}
+footer .iconss {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer .iconss a {
+  color: black;
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 15px;
+  color: white;
+  margin-right: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#about {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/img/new-img-01.jpg") center/cover no-repeat fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Cormorant Garamond";
+  color: white;
+}
+
+#aboutus {
+  margin: 30px 0px;
+  padding: 30px 0px;
+}
+#aboutus .theBest {
+  padding: 0px 30px;
+  margin: 30px 0px;
+}
+#aboutus .us {
+  font-weight: 700;
+  font-size: 16px;
+  color: #86996c;
+  line-height: 16px;
+  font-family: "Quattrocento Sans";
+  margin: 30px 0px;
+  padding: 30px 0px;
+  letter-spacing: 1.8px;
+}
+#aboutus h1 {
+  padding: 20px 0px;
+  font-weight: 500;
+  font-size: 42px;
+  color: #d75732;
+  line-height: 55px;
+  font-family: "Cormorant Garamond";
+  margin-bottom: 20px;
+}
+#aboutus p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #442916;
+  line-height: 25.28px;
+  font-family: "Quattrocento Sans";
+  margin-bottom: 30px;
+}
+#aboutus .mail {
+  font-weight: 400;
+  font-size: 17px;
+  color: #d75732;
+  line-height: 20px;
+  font-family: "Quattrocento Sans";
+}
+#aboutus .solid {
+  padding: 15px;
+  color: #d75732;
+  background-color: #FAF3E1;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#aboutus .progresSec {
+  padding: 30px;
+  margin: 30px 0px;
+}
+#aboutus .progresSec .progress {
+  height: 12px;
+  margin-bottom: 20px;
+}
+#aboutus .progresSec .progress-bar {
+  background-color: #86996C;
+}
+#aboutus h3, #aboutus span {
+  font-weight: 600;
+  font-size: 19px;
+  color: #d75732;
+  line-height: 25.28px;
+  font-family: "Cormorant Garamo";
+}
+#aboutus .percent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#expierence {
+  background: url("/assets/img/h2-box-background2.jpg") center/cover no-repeat fixed;
+  padding: 30px 0px;
+  margin-top: 30px;
+}
+#expierence .expierenceCoffe {
+  margin: 30px 0px;
+  padding: 30px 0px;
+}
+#expierence span {
+  font-weight: 700;
+  font-size: 13px;
+  font-family: "Quattrocento Sans";
+  letter-spacing: 1.8px;
+}
+#expierence h1 {
+  font-weight: 500;
+  font-size: 51.001px;
+  color: #d75732;
+  font-family: "Cormorant Garamond";
+}
+#expierence p {
+  font-weight: 400;
+  font-size: 17px;
+  color: #cfc8b8;
+  font-family: "Quattrocento Sans";
+  letter-spacing: 0;
+}

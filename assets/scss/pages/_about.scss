@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#about {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/img/new-img-01.jpg') center/cover no-repeat fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Cormorant Garamond";
+    color: white;
+}
+
+#aboutus {
+    margin: 30px 0px;
+    padding: 30px 0px;
+
+    .theBest {
+        padding: 0px 30px;
+        margin: 30px 0px;
+    }
+
+    .us {
+        font-weight: 700;
+        font-size: 16px;
+        color: #86996c;
+        line-height: 16px;
+        font-family: "Quattrocento Sans";
+        margin: 30px 0px;
+        padding: 30px 0px;
+        letter-spacing: 1.8px;
+    }
+
+    h1 {
+        padding: 20px 0px;
+        font-weight: 500;
+        font-size: 42px;
+        color: #d75732;
+        line-height: 55px;
+        font-family: "Cormorant Garamond";
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 18px;
+        color: #442916;
+        line-height: 25.28px;
+        font-family: "Quattrocento Sans";
+        margin-bottom: 30px;
+    }
+
+    .mail {
+        font-weight: 400;
+        font-size: 17px;
+        color: #d75732;
+        line-height: 20px;
+        font-family: "Quattrocento Sans";
+    }
+
+    .solid {
+        padding: 15px;
+        color: #d75732;
+        background-color: #FAF3E1;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    .progresSec {
+        padding: 30px;
+        margin: 30px 0px;
+
+        .progress {
+            height: 12px;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            background-color: #86996C;
+        }
+    }
+
+    h3, span{
+        font-weight: 600;
+        font-size: 19px;
+        color: #d75732;
+        line-height: 25.28px;
+        font-family: "Cormorant Garamo";
+}
+.percent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}}
+#expierence{
+    background:url("/assets/img/h2-box-background2.jpg") center/cover no-repeat fixed;
+    padding: 30px 0px;
+    margin-top: 30px;
+    .expierenceCoffe{
+        margin: 30px 0px;
+        padding: 30px 0px;
+    }
+    span {
+       
+        font-weight: 700;
+        font-size: 13px;
+        font-family: "Quattrocento Sans";
+        letter-spacing: 1.8px;
+
+    }
+
+    h1 {
+        font-weight: 500;
+        font-size: 51.001px;
+        color: #d75732;
+        font-family: "Cormorant Garamond";
+    }
+
+    p {
+      
+        font-weight: 400;
+        font-size: 17px;
+        color: #cfc8b8;
+        font-family: "Quattrocento Sans";
+        letter-spacing: 0
+    }
+}
