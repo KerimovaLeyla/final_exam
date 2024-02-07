@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#detail {
+    background-color: #FAF3E1;
+    padding: 30px 0px;
+    font-family: "Cormorant Garamond";
+    .info{
+        display: flex;
+        align-items: center;
+    }
+    h1,
+    h5 {
+        color: #D75732;
+        margin: 30px 0px;
+        font-weight: 100;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .iconscontact {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .fa-brands {
+        border-radius: 50%;
+        padding: 15px;
+        border: 1px solid #D75732;
+        font-size: 20px;
+    }
+
+    a {
+        color: #D75732;
+    }
+
+    .fa-facebook-f:hover {
+        color: rgb(105, 105, 182);
+    }
+
+    .fa-twitter:hover {
+        color: rgb(95, 150, 189);
+    }
+
+    .fa-instagram:hover {
+        color: rgb(151, 13, 133);
+    }
+
+    .fa-dribbble:hover {
+        color: rgb(145, 104, 38);
+    }
+}
+
+.fa-regular,.fa-solid{
+color: #D75732;
+
+}
+.form-control {
+    margin: 20px 7px;
+    border: none;
+
+    font-size: 17px;
+    padding: 7px 5px;
+    background-color: #FAF3E1;
+    border-bottom: 2px solid rgb(208, 206, 206);
+    box-shadow: none;
+
+    &:focus {border: none;
+        background-color: #FAF3E1;
+        border-bottom: 2px solid #bb8f83;
+        box-shadow: 0 0 0 0.01rem rgba(181, 187, 194, 0.25);
+
+        &::placeholder {
+            color: #D75732;
+        }
+    }
+}
+
+
