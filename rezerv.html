@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <img src="/assets/img/new-logo-dark.png" alt=""> <button class="navbar-toggler" type="button"
+                data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse collapseDiv" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="./index.html" id="navbarDropdown">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Page
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./about.html">About</a>
+                            <a class="dropdown-item" href="./portfolio.html">Portfolio</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="./blog.html" id="navbarDropdown">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="./shop.html" id="navbarDropdown">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="./contact.html" id="navbarDropdown">
+                            Contacts
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="./rezerv.html" id="navbarDropdown">
+                            Reservation
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-heart" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <div class="aboutPiece">
+                <h1>Reservation</h1>
+                <i class="fa-solid fa-chevron-down fa-sm" style="color: #f4f7fa;"></i>
+            </div>
+        </section>
+        <section id="booking">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="coffeden">
+                            <div class="coffedenimg">
+                            <img src="./assets/img/booking-img-2 (1).png" alt="">
+                      </div>
+                        <form id="book-table-form">
+                            <span><img src="./assets/img/circle-left.png" alt=""></span><span>CONTACT US</span>
+                            <h2>Book Your Table Now !</h2>
+                            <input type="text" id="name" placeholder="First Name" name="name" required>
+                            <input type="email" id="email" placeholder="Email" name="email" required>
+                            <input type="tel" id="phone" placeholder="Phone No" name="phone" required>
+                            <input type="date" id="date" name="date" required class="large-calender">
+                            <select id="time" name="time" required>
+                                <option value="">Time</option>
+                                <option value="12:00">12:00 pm</option>
+                                <option value="12:30">12:30 pm</option>
+                                <option value="13:00">1:00 pm</option>
+                                <option value="13:30">1:30 pm</option>
+                                <option value="14:00">2:00 pm</option>
+                                <option value="17:00">5:00 pm</option>
+                                <option value="17:30">5:30 pm</option>
+                                <option value="18:00">6:00 pm</option>
+                                <option value="19:15">7:15 pm</option>
+                                <option value="19:45">7:45 pm</option>
+                                <option value="20:15">8:15 pm</option>
+                                <option value="20:30">8:30 pm</option>
+                            </select>
+
+                            <select id="party-size" name="party-size" required>
+                                <option value="">Person</option>
+                                <option value="1">1 person</option>
+                                <option value="2">2 people</option>
+                                <option value="3">3 people</option>
+                                <option value="4">4 people</option>
+                                <option value="5">5 people</option>
+                                <option value="6">6 people</option>
+                                <option value="7">7 people</option>
+                                <option value="8">8 people</option>
+                            </select>
+                            <br>
+
+                            <textarea id="message" name="message" placeholder="Type your message"></textarea>
+                            <button type="submit">Book Table</button>
+                        </form>
+                    </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="backimg">
+                            <img src="./assets/img/booking-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<section id="booktabs">
+    <div class="container">
+    <div class="bookss">
+        <h1>Do you want to have a
+            good evening? </h1>
+            <p>Book a table now!</p>
+    </div></div>
+</section>
+
+    </main>
+    <section class="footerOne">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="widget1">
+                        <div class="logo">
+                            <img src="./assets/img/new-logo-white.png" class="img-fluid" alt="">
+                        </div>
+                        <p>
+                            In eu libero ligula. Fusce eget metus lorem, ac viverra
+                            leo. Nullam convallis, arcu vel pellentesque sodales,
+                            nisi est varius diam, ac ultrices sem ante quis sem.
+                            Proin ultricies volutpat sapien.
+                        </p>
+                        <div class="socialLinks">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="widget2">
+                        <h5>
+                            Latest News
+                        </h5>
+                        <div class="media">
+                            <img class="img-fluid" src="./assets/img/image-204.jpg" alt="">
+                            <div class="media-body d-flex align-self-center">
+                                <div class="content">
+                                    <a href="#">
+                                        <p>
+                                            Did son unreserved themselves indulgence its
+                                        </p>
+                                    </a>
+                                    <span>
+                                        Aug 17, 2019
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <img class="img-fluid" src="./assets/img/image-346-370x370.jpg" alt="">
+                            <div class="media-body d-flex align-self-center">
+                                <div class="content">
+                                    <a href="#">
+                                        <p>
+                                            Rapturous am eagerness it as resolving household
+                                        </p>
+                                    </a>
+                                    <span>
+                                        Aug 17, 2019
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-2">
+                    <div class="widget3">
+                        <h5>
+                            Quick Links
+                        </h5>
+                        <ul>
+                            <li>
+                                <a href="./index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./about.html">
+                                    Page
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./blog.html">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./shop.html">
+                                    Shop
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">
+                                    Contacts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./rezerv.html">
+                                    Reservation
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <div class="widget4">
+
+                        <img src="./assets/img/image-356-840x1260.jpg" style="max-width: 100%;border-radius: 80px;"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyRightArea">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; Copyright All rights reserved 2019.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+                integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+            <script src="./assets/js/about.js"></script>
+</body>
+
+</html>

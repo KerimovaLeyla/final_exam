@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#booking { padding: 30px 0;
+    min-height: 100vh;
+    .coffeden {
+        position: relative;
+
+        .coffedenimg {
+            position: absolute;
+            bottom: -70px;
+            left: -90px;
+        }
+    }
+
+    .col-xl-6 {
+        padding: 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    form {
+        background-color: #3F271E;
+        padding: 30px 20px;
+
+        span {
+            padding-right: 10px;
+            color: white;
+            font-family: Caudex;
+            font-size: 18px;
+        }
+
+        h2 {
+            letter-spacing: 0.04em;
+            font-family: Caudex;
+            font-size: 45px;
+            color: white;
+        }
+
+        #name,
+        #email,
+        #phone,
+        #date,
+        #time,
+        #party-size,
+        #message {
+            padding: 15px 10px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            background-color: #311D15;
+            border: none;
+            color: #e3bdb3;
+            caret-color: rgb(114, 91, 7);
+
+            &:focus {
+
+                &::placeholder {
+                    color: #e3bdb3;
+
+                }
+            }
+
+            &::placeholder {
+                color: #926D63;
+
+            }
+        }
+
+        #name {
+            width: 91%;
+
+        }
+
+        #email {
+            width: 45%;
+        }
+
+        #phone {
+            width: 45%;
+        }
+
+        #date {
+            color: #926D63;
+            width: 29%;
+        }
+
+        #time {
+            color: #926D63;
+            width: 30%;
+        }
+
+        #party-size {
+            color: #926D63;
+            width: 30%;
+
+        }
+
+        #message {
+            width: 90%;
+        }
+
+        button {
+            cursor: pointer;
+            width: 90%;
+            margin-bottom: 14px 0px 10px;
+            padding: 15px 10px;
+            border-radius: 10px;
+            border: none;
+
+            &:hover {
+                background-color: black;
+                color: white;
+
+            }
+        }
+
+    }
+
+}
+
+#booktabs{height: auto; padding: 30px 0;
+    min-height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/img/defocused-coffee-shop-and-restaurant-background-free-photo.jpg') center/cover fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(205, 200, 200);
+    font-family: Caudex;
+    font-size: 42px;
+    .nowbook{
+        justify-content: space-evenly;
+    }
+  
+    h1{  border-radius: 20px;
+       
+        padding: 20px 10px;
+        background-color: white;
+    }
+   p{  border-radius: 20px;
+ 
+    text-align: end;
+    justify-content: flex-end;
+    padding: 20px 10px;
+    background-color: black;
+   }
+}
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+a:active,
+a:focus {
+    color: #6f6f6f;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.footerOne {
+    padding: 100px 0px 0px;
+    background-color: #311D15;
+}
+
+
+.footerOne .widget1 p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, .6);
+    margin-top: 26px;
+}
+
+.footerOne .socialLinks {
+    margin-top: 28px;
+}
+
+.socialLinks ul li {
+    display: inline-block;
+}
+
+
+.socialLinks ul li a i {
+    display: block;
+    margin: 0 2px;
+    width: 40px;
+    height: 40px;
+    background: #fafafa;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 5px;
+    line-height: 40px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.socialLinks ul li a .fa-facebook-f {
+    color: #4267b2;
+}
+
+.socialLinks ul li a .fa-twitter {
+    color: #1da1f2;
+}
+
+.socialLinks ul li a .fa-google-plus-g {
+    color: #dd5044;
+}
+
+.socialLinks ul li a .fa-linkedin-in {
+    color: #0177b5;
+}
+
+
+.socialLinks ul li a:hover i {
+    color: #fff;
+}
+
+.socialLinks ul li a:hover .fa-facebook-f {
+    background: #4267b2;
+}
+
+.socialLinks ul li a:hover .fa-twitter {
+    background: #1da1f2;
+}
+
+.socialLinks ul li a:hover .fa-google-plus-g {
+    background: #dd5044;
+}
+
+.socialLinks ul li a:hover .fa-linkedin-in {
+    background: #0177b5;
+}
+
+footerOne .logo {
+    max-width: 200px;
+}
+
+.footerOne h5 {
+    font-weight: 500;
+    margin-bottom: 28px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #fff;
+    font-size: 21px;
+    letter-spacing: 0.1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footerOne .widget2 .media img {
+    margin-right: 20px;
+    max-width: 100px;
+}
+
+.footerOne .widget2 .media p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, .8);
+    ;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.footerOne .widget2 .media span {
+    font-size: 12px;
+    color: #775d21;
+    text-transform: uppercase;
+    margin-top: 15px;
+    display: block;
+}
+
+.footerOne .widget2 .media {
+    margin-bottom: 20px;
+}
+
+.footerOne .widget3 ul li a,
+.footerOne .widget4 ul li a {
+    font-size: 16px;
+    color: rgba(255, 255, 255, .6);
+    ;
+    text-transform: capitalize;
+    margin-bottom: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footerOne .widget3 ul li a:hover,
+.footerOne .widget4 ul li a:hover,
+.footerOne .widget2 a:hover p {
+    color: black;
+}
+
+.footerOne .widget3 h5 {
+    margin-bottom: 22px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 21px;
+    line-height: 32px;
+}
+
+.footerOne .widget4 h5 {
+    margin-bottom: 22px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 21px;
+}
+
+.copyRightArea {
+    margin-top: 83px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 25px 0px 28px;
+}
+
+.copyRightArea p {
+    color: rgba(255, 255, 255, 0.6);
+}
