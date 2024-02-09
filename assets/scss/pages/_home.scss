@@ -28,7 +28,7 @@ header {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-
+padding: 10px 0px;
     a {
         color: white;
         transition: 0.5s;
@@ -129,6 +129,129 @@ header {
         }
 
     }
+}
+
+#caruselSec{height: auto;
+    .corItem{
+        position: relative;text-align: center;
+        display: flex;flex-direction: column;
+        align-items: center;justify-content: center;
+        .caruselItemtext{
+            color: white; font-family: "Cormorant Garamond";
+            position: absolute;
+            button{cursor: pointer;
+                padding: 15px 30px;
+                border-radius: 30px;
+                border: none;
+                margin-top: 30px;
+                background-color: #E6A347;
+                color: white;
+                &:hover{
+                    background-color: #9FA753;
+                }            }
+        }
+    }
+
+}
+
+
+
+.seven span {
+	color: white;
+	opacity: 0;
+	transform: translate(-150px, 0) scale(.3);
+	animation: leftRight .5s forwards;
+}
+
+
+@keyframes leftRight {
+	40% {
+		transform: translate(50px, 0) scale(.7);
+		opacity: 1;
+		color: #E6A347;
+	}
+
+	60% {
+		color: #9FA753;
+	}
+
+	80% {
+		transform: translate(0) scale(2);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+	}
+}
+
+.animate {
+	font-size: 50px;
+}
+
+.animate span {
+	display: inline-block;
+}
+.animate span:nth-of-type(2) {
+	animation-delay: .05s;
+}
+.animate span:nth-of-type(3) {
+	animation-delay: .1s;
+}
+.animate span:nth-of-type(4) {
+	animation-delay: .15s;
+}
+.animate span:nth-of-type(5) {
+	animation-delay: .2s;
+}
+.animate span:nth-of-type(6) {
+	animation-delay: .25s;
+}
+.animate span:nth-of-type(7) {
+	animation-delay: .3s;
+}
+.animate span:nth-of-type(8) {
+	animation-delay: .35s;
+}
+.animate span:nth-of-type(9) {
+	animation-delay: .4s;
+}
+.animate span:nth-of-type(10) {
+	animation-delay: .45s;
+}
+.animate span:nth-of-type(11) {
+	animation-delay: .5s;
+}
+.animate span:nth-of-type(12) {
+	animation-delay: .55s;
+}
+.animate span:nth-of-type(13) {
+	animation-delay: .6s;
+}
+.animate span:nth-of-type(14) {
+	animation-delay: .65s;
+}
+.animate span:nth-of-type(15) {
+	animation-delay: .7s;
+}
+.animate span:nth-of-type(16) {
+	animation-delay: .75s;
+}
+.animate span:nth-of-type(17) {
+	animation-delay: .8s;
+}
+.animate span:nth-of-type(18) {
+	animation-delay: .85s;
+}
+.animate span:nth-of-type(19) {
+	animation-delay: .9s;
+}
+.animate span:nth-of-type(20) {
+	animation-delay: .95s;
+}
+.animate span:nth-of-type(21) {
+	animation-delay: 1s;
 }
 
 #coffeCulture {
@@ -232,7 +355,7 @@ header {
     height: auto;
     padding: 20px 15px;
 
-    img {
+    img {visibility: visible;
         max-width: 100%;
     }
 
@@ -251,7 +374,7 @@ header {
         h3 {
             font-weight: 500;
             font-size: 57.001px;
-            color: #d75732;
+           
             font-family: "Cormorant Garamond";
             margin: 30px;
         }
@@ -266,8 +389,10 @@ header {
         display: flex;
         align-items: end;
         justify-content: start;
-
-
+visibility: hidden;
+&:hover{
+    visibility: visible;
+}
         .coffeType {
             position: absolute;
             padding: 3px 15px;
@@ -277,7 +402,7 @@ header {
             opacity: 1;
             transform: scale(1);
 
-            a {
+            h5{
                 color: #D75732;
                 font-family: "Quattrocento Sans";
                 padding: 0;
@@ -365,10 +490,10 @@ header {
         max-width: 100%;
     }
 
-    .menuItem {
+    .menuItem {margin-bottom: 15px;
         margin-left: 15px;
 
-        span {
+        span {font-size: 22px;
             font-weight: 400;
             color: #262626;
             font-family: Marcellus;

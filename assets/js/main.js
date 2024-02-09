@@ -4,3 +4,4 @@ $('button').click(function() {
       return text === "Sent!" ? "Send" : "Sent!";
     });
   });
+

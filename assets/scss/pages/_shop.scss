@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#shopSec {
+    margin: 30px 0px;
+
+    ul li a {
+        text-decoration: dotted;
+    }
+
+    .tagsSale {
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-family: "Quattrocento Sans";
+        border: 1px solid #DFC5B0;
+        font-size: 14px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+
+    .tags {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cartp {
+        margin: 30px 0px;
+        color: #d75732;
+        font-weight: 600;
+        font-family: "Cormorant Garamond";
+        font-size: 22px;
+    }
+
+    .cartShoptot {
+        padding: 30px 10px;
+        background-color: #FAF3E1;
+        margin-top: 10px 0px;
+
+        form {
+            background-color: transparent;
+            width: 260px;
+            border: 2px solid #DFC5B0;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-radius: 30px;
+        }
+
+        input {
+            all: unset;
+            caret-color: black;
+            font: 16px system-ui;
+            color: #fff;
+            height: 100%;
+            width: 100%;
+            padding: 6px 10px;
+
+            ::placeholder {
+                color: #fff;
+                opacity: 0.7;
+            }
+        }
+
+        button {
+            all: unset;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+        }
+
+        svg {
+            color: grey;
+            fill: currentColor;
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+
+        }
+    }
+
+    button,
+    select {
+        border: none;
+    }
+}
+
+
+#prolist {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+
+    .proDiv {
+        position: relative;
+
+        &:hover {
+
+            .onebutton,
+            .threebutton,
+            .twobutton {
+                cursor: pointer;
+                border-radius: 50%;
+                border: none;
+                font-size: 14px;
+
+                &:hover {
+                    color: #E6A347;
+                    transform: translateY(-10px);
+                }
+                
+            }
+        }
+
+        .onebutton {
+            padding: 13px 12px;
+            margin: 0px 5px;
+        }
+
+        .threebutton {
+            padding: 13px 13px;
+            margin: 0px 5px;
+        }
+
+        .twobutton {
+            padding: 13px 20px;
+            margin: 0px 5px;
+        }
+
+        &:hover {
+            .btnDiv {
+                display: block;
+
+            }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .textDiv {
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            h4 {
+                font-size: 19px;
+                font-weight: 600;
+                font-family: "Cormorant Garamond";
+                font-style: italic;
+                color: #D75732;
+
+                &:hover {
+                    color: #E6A347;
+                }
+
+            }
+
+            p {
+                font-size: 17px;
+                font-weight: 400;
+                font-family: "Quattrocento Sans";
+                color: black;
+
+                &:hover {
+                    color: #dd5044;
+                }
+            }
+
+            span {
+                font-size: 20px;
+                font-weight: 700;
+                color: #F65D4E;
+                font-family: Sora;
+                margin-top: 10px;
+            }
+        }
+
+        .btnDiv {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: none;
+            display: none;
+            top: 100px;
+            left: 60px;
+
+        }
+    }
+
+}

@@ -27,6 +27,7 @@ header {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  padding: 10px 0px;
 }
 header a {
   color: white;
@@ -108,6 +109,148 @@ header nav .icon {
     filter: grayscale(450px);
   }
 }
+#caruselSec {
+  height: auto;
+}
+#caruselSec .corItem {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#caruselSec .corItem .caruselItemtext {
+  color: white;
+  font-family: "Cormorant Garamond";
+  position: absolute;
+}
+#caruselSec .corItem .caruselItemtext button {
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  margin-top: 30px;
+  background-color: #E6A347;
+  color: white;
+}
+#caruselSec .corItem .caruselItemtext button:hover {
+  background-color: #9FA753;
+}
+
+.seven span {
+  color: white;
+  opacity: 0;
+  transform: translate(-150px, 0) scale(0.3);
+  animation: leftRight 0.5s forwards;
+}
+
+@keyframes leftRight {
+  40% {
+    transform: translate(50px, 0) scale(0.7);
+    opacity: 1;
+    color: #E6A347;
+  }
+  60% {
+    color: #9FA753;
+  }
+  80% {
+    transform: translate(0) scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0) scale(1);
+    opacity: 1;
+  }
+}
+.animate {
+  font-size: 50px;
+}
+
+.animate span {
+  display: inline-block;
+}
+
+.animate span:nth-of-type(2) {
+  animation-delay: 0.05s;
+}
+
+.animate span:nth-of-type(3) {
+  animation-delay: 0.1s;
+}
+
+.animate span:nth-of-type(4) {
+  animation-delay: 0.15s;
+}
+
+.animate span:nth-of-type(5) {
+  animation-delay: 0.2s;
+}
+
+.animate span:nth-of-type(6) {
+  animation-delay: 0.25s;
+}
+
+.animate span:nth-of-type(7) {
+  animation-delay: 0.3s;
+}
+
+.animate span:nth-of-type(8) {
+  animation-delay: 0.35s;
+}
+
+.animate span:nth-of-type(9) {
+  animation-delay: 0.4s;
+}
+
+.animate span:nth-of-type(10) {
+  animation-delay: 0.45s;
+}
+
+.animate span:nth-of-type(11) {
+  animation-delay: 0.5s;
+}
+
+.animate span:nth-of-type(12) {
+  animation-delay: 0.55s;
+}
+
+.animate span:nth-of-type(13) {
+  animation-delay: 0.6s;
+}
+
+.animate span:nth-of-type(14) {
+  animation-delay: 0.65s;
+}
+
+.animate span:nth-of-type(15) {
+  animation-delay: 0.7s;
+}
+
+.animate span:nth-of-type(16) {
+  animation-delay: 0.75s;
+}
+
+.animate span:nth-of-type(17) {
+  animation-delay: 0.8s;
+}
+
+.animate span:nth-of-type(18) {
+  animation-delay: 0.85s;
+}
+
+.animate span:nth-of-type(19) {
+  animation-delay: 0.9s;
+}
+
+.animate span:nth-of-type(20) {
+  animation-delay: 0.95s;
+}
+
+.animate span:nth-of-type(21) {
+  animation-delay: 1s;
+}
+
 #coffeCulture {
   height: auto;
   padding: 30px 0px;
@@ -194,6 +337,7 @@ header nav .icon {
   padding: 20px 15px;
 }
 #ourCoffe img {
+  visibility: visible;
   max-width: 100%;
 }
 #ourCoffe .headTxt {
@@ -210,7 +354,6 @@ header nav .icon {
 #ourCoffe .headTxt h3 {
   font-weight: 500;
   font-size: 57.001px;
-  color: #d75732;
   font-family: "Cormorant Garamond";
   margin: 30px;
 }
@@ -222,6 +365,10 @@ header nav .icon {
   display: flex;
   align-items: end;
   justify-content: start;
+  visibility: hidden;
+}
+#ourCoffe .drinkCoffe:hover {
+  visibility: visible;
 }
 #ourCoffe .drinkCoffe .coffeType {
   position: absolute;
@@ -232,7 +379,7 @@ header nav .icon {
   opacity: 1;
   transform: scale(1);
 }
-#ourCoffe .drinkCoffe .coffeType a {
+#ourCoffe .drinkCoffe .coffeType h5 {
   color: #D75732;
   font-family: "Quattrocento Sans";
   padding: 0;
@@ -305,9 +452,11 @@ header nav .icon {
   max-width: 100%;
 }
 #menu .menuItem {
+  margin-bottom: 15px;
   margin-left: 15px;
 }
 #menu .menuItem span {
+  font-size: 22px;
   font-weight: 400;
   color: #262626;
   font-family: Marcellus;
@@ -1511,4 +1660,172 @@ footerOne .logo {
 
 .copyRightArea p {
   color: rgba(255, 255, 255, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#shopSec {
+  margin: 30px 0px;
+}
+#shopSec ul li a {
+  text-decoration: dotted;
+}
+#shopSec .tagsSale {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: "Quattrocento Sans";
+  border: 1px solid #DFC5B0;
+  font-size: 14px;
+  cursor: pointer;
+}
+#shopSec .tagsSale:hover {
+  background-color: black;
+  color: white;
+}
+#shopSec .tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#shopSec .cartp {
+  margin: 30px 0px;
+  color: #d75732;
+  font-weight: 600;
+  font-family: "Cormorant Garamond";
+  font-size: 22px;
+}
+#shopSec .cartShoptot {
+  padding: 30px 10px;
+  background-color: #FAF3E1;
+  margin-top: 10px 0px;
+}
+#shopSec .cartShoptot form {
+  background-color: transparent;
+  width: 260px;
+  border: 2px solid #DFC5B0;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 30px;
+}
+#shopSec .cartShoptot input {
+  all: unset;
+  caret-color: black;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+#shopSec .cartShoptot input ::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+#shopSec .cartShoptot button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+#shopSec .cartShoptot svg {
+  color: grey;
+  fill: currentColor;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+#shopSec button,
+#shopSec select {
+  border: none;
+}
+
+#prolist {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0px;
+}
+#prolist .proDiv {
+  position: relative;
+}
+#prolist .proDiv:hover .onebutton,
+#prolist .proDiv:hover .threebutton,
+#prolist .proDiv:hover .twobutton {
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  font-size: 14px;
+}
+#prolist .proDiv:hover .onebutton:hover,
+#prolist .proDiv:hover .threebutton:hover,
+#prolist .proDiv:hover .twobutton:hover {
+  color: #E6A347;
+  transform: translateY(-10px);
+}
+#prolist .proDiv .onebutton {
+  padding: 13px 12px;
+  margin: 0px 5px;
+}
+#prolist .proDiv .threebutton {
+  padding: 13px 13px;
+  margin: 0px 5px;
+}
+#prolist .proDiv .twobutton {
+  padding: 13px 20px;
+  margin: 0px 5px;
+}
+#prolist .proDiv:hover .btnDiv {
+  display: block;
+}
+#prolist .proDiv img {
+  width: 100%;
+  height: auto;
+}
+#prolist .proDiv .textDiv {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#prolist .proDiv .textDiv h4 {
+  font-size: 19px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  color: #D75732;
+}
+#prolist .proDiv .textDiv h4:hover {
+  color: #E6A347;
+}
+#prolist .proDiv .textDiv p {
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Quattrocento Sans";
+  color: black;
+}
+#prolist .proDiv .textDiv p:hover {
+  color: #dd5044;
+}
+#prolist .proDiv .textDiv span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #F65D4E;
+  font-family: Sora;
+  margin-top: 10px;
+}
+#prolist .proDiv .btnDiv {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  display: none;
+  top: 100px;
+  left: 60px;
 }
