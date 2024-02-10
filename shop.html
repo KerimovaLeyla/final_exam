@@ -40,6 +40,8 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="./about.html">About</a>
                             <a class="dropdown-item" href="./portfolio.html">Portfolio</a>
+                            <a class="dropdown-item" href="./register.html">Resgister</a>
+                            <a class="dropdown-item" href="./login.html">Sign In</a>
                         </div>
                     </li>
 
@@ -64,15 +66,15 @@
                         <a class="nav-link " href="./rezerv.html" id="navbarDropdown">
                             Reservation
                         </a>
-                    </li>
-
                 </ul>
                 <div class="icon">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                 
-                    <i class="fa-solid fa-heart" style="color: #ffffff;"></i>
+                    <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="./wishlist.html"> <i class="fa-solid fa-heart" style="color: #ffffff;"></i></a>
                 </div>
+
             </div>
+
+
         </nav>
     </header>
     <main>
@@ -90,18 +92,65 @@
                         <div class="filterText">
                             <p>Showing 1–6 of 8 results</p>
                         </div>
-                            <div class="proname">
-                                <select id="filterdata">
-                                    <option value="1">Sort by</option>
-                                    <option value="2">Sort by : A-z</option>
-                                    <option value="3">Sort by : Z-A</option>
-                                    <option value="3">Sort by price: low to high</option>
-                                    <option value="3">Sort by price: high to low</option>
-                                </select>
-                            </div>
-                            <div id="prolist">
+                        <div class="proname">
+                            <!-- <select id="filterdata"
+                                style="color: #dd5044;font-size: 20px;font-weight: 600;font-family: 'Times New Roman', Times, serif;padding: 5px;cursor: pointer;">
+                                <option style="background-color: #FAF3E1;" id="dflt" value="1">Sort by</option>
+                                <option style="background-color: #FAF3E1;" id="abc" value="2">Sort by : A-z</option>
+                                <option style="background-color: #FAF3E1;" id="cba" value="3">Sort by : Z-A</option>
+                                <option style="background-color: #FAF3E1;" id="min" value="3">Sort by price: low to high</option>
+                                <option style="background-color: #FAF3E1;" id="max" value="3">Sort by price: high to low</option>
+                            </select> -->
 
+                            <div class="dropdown" id="filterdata">
+                                <a style="color: #dd5044;font-size: 20px;background-color: transparent;letter-spacing: 0.05em; border: none;box-shadow: none; font-weight: 600;font-family: 'Times New Roman', Times, serif;padding: 5px;cursor: pointer;"
+                                    class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Sort by
+                                </a>
+
+                              <ul> <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    
+                                        <li> <button style="background-color: white;cursor: pointer; padding: 6px;font-family: Cormorant Garamond;" id="dflt">Default</button></li>
+                                        <li> <button style="background-color: white;cursor: pointer; padding: 6px;font-family: Cormorant Garamond;" id="abc">Sort by : A-z</button></li>
+                                        <li> <button style="background-color: white;cursor: pointer; padding: 6px;font-family: Cormorant Garamond;" id="cba">Sort by : Z-A</button></li>
+                                        <li> <button style="background-color: white;cursor: pointer; padding: 6px;font-family: Cormorant Garamond;" id="min">Sort by price: low to high</button></li>
+                                        <li> <button style="background-color: white;cursor: pointer; padding: 6px;font-family: Cormorant Garamond;" id="max">Sort by price: high to low</button></li>
+                                    
+                                </div></ul>
                             </div>
+                            <!-- <div id="filter">
+                                <div class="d-flex flex-column">
+                                    <div class="filterContent">
+                                        <div class="d-flex filterItem">
+                                            <label for="max">Bahalidan ucuza</label>
+                                            <input name="price" id="max" type="radio">
+                                        </div>
+                                        <div class="d-flex filterItem">
+                                            <label for="min">Ucuzdan bahaliya</label>
+                                            <input name="price" id="min" type="radio">
+                                        </div>
+                                        <div class="d-flex filterItem">
+                                            <label for="abc">A-z...</label>
+                                            <input name="price" id="abc" type="radio">
+                                        </div>
+                                        <div class="d-flex filterItem">
+                                            <label for="cba">Z-a...</label>
+                                            <input name="price" id="cba" type="radio">
+                                        </div>
+                                        <div class="d-flex filterItem">
+                                            <label for="dflt">Default</label>
+                                            <input name="price" id="dflt" type="radio">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div> -->
+                        </div>
+                        <div id="prolist">
+                        </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                         <div class="cartShoptot">
@@ -110,10 +159,10 @@
                             <div class="cartTotal"></div>
 
                             <p class="cartp">Search</p>
-                            <form role="search" id="form">
-                                <input type="search" id="query" name="q" placeholder="Search..."
+                            <form role="search"  action="#" id="srcItem">
+                                <input type="search" id="inp"  name="q" placeholder="Search..."
                                     aria-label="Search through site content">
-                                <button>
+                                <button type="submit">
                                     <svg viewBox="0 0 1024 1024">
                                         <path class="path1"
                                             d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">

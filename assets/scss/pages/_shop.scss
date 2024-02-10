@@ -104,6 +104,7 @@
 
     .proDiv {
         position: relative;
+        box-shadow: 0px 10px 10px 0px rgba(#8b6358, 0.1);
 
         &:hover {
 
@@ -119,7 +120,7 @@
                     color: #E6A347;
                     transform: translateY(-10px);
                 }
-                
+
             }
         }
 
@@ -153,6 +154,7 @@
         .textDiv {
             margin-top: 20px;
             margin-bottom: 20px;
+            padding: 3px 5px;
 
             h4 {
                 font-size: 19px;
@@ -195,7 +197,7 @@
             cursor: pointer;
             border: none;
             display: none;
-            top: 100px;
+            top: 140px;
             left: 60px;
 
         }
