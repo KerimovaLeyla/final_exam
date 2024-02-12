@@ -90,7 +90,7 @@
                 <div class="row">
                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                         <div class="filterText">
-                            <p>Showing 1–6 of 8 results</p>
+                            <p>Showing 1–8 of 8 results</p>
                         </div>
                         <div class="proname">
                             <!-- <select id="filterdata"
@@ -110,15 +110,27 @@
                                     Sort by
                                 </a>
 
-                              <ul> <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    
-                                        <li> <button style="background-color: white;cursor: pointer; padding: 6px;font-family: Cormorant Garamond;" id="dflt">Default</button></li>
-                                        <li> <button style="background-color: white;cursor: pointer; padding: 6px;font-family: Cormorant Garamond;" id="abc">Sort by : A-z</button></li>
-                                        <li> <button style="background-color: white;cursor: pointer; padding: 6px;font-family: Cormorant Garamond;" id="cba">Sort by : Z-A</button></li>
-                                        <li> <button style="background-color: white;cursor: pointer; padding: 6px;font-family: Cormorant Garamond;" id="min">Sort by price: low to high</button></li>
-                                        <li> <button style="background-color: white;cursor: pointer; padding: 6px;font-family: Cormorant Garamond;" id="max">Sort by price: high to low</button></li>
-                                    
-                                </div></ul>
+                                <ul>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                                        <li> <button
+                                                style="background-color: white;cursor: pointer; padding: 6px;font-family: Cormorant Garamond;"
+                                                id="dflt">Default</button></li>
+                                        <li> <button
+                                                style="background-color: white;cursor: pointer; padding: 6px;font-family: Cormorant Garamond;"
+                                                id="abc">Sort by : A-z</button></li>
+                                        <li> <button
+                                                style="background-color: white;cursor: pointer; padding: 6px;font-family: Cormorant Garamond;"
+                                                id="cba">Sort by : Z-A</button></li>
+                                        <li> <button
+                                                style="background-color: white;cursor: pointer; padding: 6px;font-family: Cormorant Garamond;"
+                                                id="min">Sort by price: low to high</button></li>
+                                        <li> <button
+                                                style="background-color: white;cursor: pointer; padding: 6px;font-family: Cormorant Garamond;"
+                                                id="max">Sort by price: high to low</button></li>
+
+                                    </div>
+                                </ul>
                             </div>
                             <!-- <div id="filter">
                                 <div class="d-flex flex-column">
@@ -154,13 +166,14 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                         <div class="cartShoptot">
-
                             <p class="cartp">Cart</p>
+                            <div id="prolist" class="row"></div>
+                            <div class="cartCount"></div>
                             <div class="cartTotal"></div>
 
                             <p class="cartp">Search</p>
-                            <form role="search"  action="#" id="srcItem">
-                                <input type="search" id="inp"  name="q" placeholder="Search..."
+                            <form role="search" action="#" id="srcItem">
+                                <input type="search" id="inp" name="q" placeholder="Search..."
                                     aria-label="Search through site content">
                                 <button type="submit">
                                     <svg viewBox="0 0 1024 1024">
@@ -170,6 +183,8 @@
                                     </svg>
                                 </button>
                             </form>
+                            <p class="cartp">Filter</p>
+                            
                             <p class="cartp">Categories</p>
                             <ul>
                                 <li><a href="">Americano (5) </a></li>
