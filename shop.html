@@ -27,7 +27,7 @@
             </button>
             <div class="collapse navbar-collapse collapseDiv" id="navbarSupportedContent">
                 <ul class="navbar-nav ">
-                    <li class="nav-item dropdown">
+                    <li class="nav-item ">
                         <a class="nav-link " href="./index.html" id="navbarDropdown">
                             Home
                         </a>
@@ -37,48 +37,49 @@
                             aria-haspopup="true" aria-expanded="false">
                             Page
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu drpmenu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="./about.html">About</a>
                             <a class="dropdown-item" href="./portfolio.html">Portfolio</a>
-                            <a class="dropdown-item" href="./register.html">Resgister</a>
-                            <a class="dropdown-item" href="./login.html">Sign In</a>
+                            <a class="dropdown-item" href="./login.html">Sign</a>
                         </div>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <li class="nav-item ">
                         <a class="nav-link" href="./blog.html" id="navbarDropdown">
                             Blog
                         </a>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <li class="nav-item ">
                         <a class="nav-link" href="./shop.html" id="navbarDropdown">
                             Shop
                         </a>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <li class="nav-item ">
                         <a class="nav-link " href="./contact.html" id="navbarDropdown">
                             Contacts
                         </a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
                         <a class="nav-link " href="./rezerv.html" id="navbarDropdown">
                             Reservation
                         </a>
+                    </li>
+
                 </ul>
                 <div class="icon">
                     <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                     <a href="./wishlist.html"> <i class="fa-solid fa-heart" style="color: #ffffff;"></i></a>
+                    <a href="./admin.html"> <i class="fa-solid fa-user-shield"></i></a>
                 </div>
 
             </div>
-
-
         </nav>
+        
     </header>
     <main>
-        <section id="about">
+        <section id="ShopPage">
             <div class="aboutPiece">
                 <h1>Shop</h1>
                 <i class="fa-solid fa-chevron-down fa-sm" style="color: #f4f7fa;"></i>
@@ -93,15 +94,6 @@
                             <p>Showing 1–8 of 8 results</p>
                         </div>
                         <div class="proname">
-                            <!-- <select id="filterdata"
-                                style="color: #dd5044;font-size: 20px;font-weight: 600;font-family: 'Times New Roman', Times, serif;padding: 5px;cursor: pointer;">
-                                <option style="background-color: #FAF3E1;" id="dflt" value="1">Sort by</option>
-                                <option style="background-color: #FAF3E1;" id="abc" value="2">Sort by : A-z</option>
-                                <option style="background-color: #FAF3E1;" id="cba" value="3">Sort by : Z-A</option>
-                                <option style="background-color: #FAF3E1;" id="min" value="3">Sort by price: low to high</option>
-                                <option style="background-color: #FAF3E1;" id="max" value="3">Sort by price: high to low</option>
-                            </select> -->
-
                             <div class="dropdown" id="filterdata">
                                 <a style="color: #dd5044;font-size: 20px;background-color: transparent;letter-spacing: 0.05em; border: none;box-shadow: none; font-weight: 600;font-family: 'Times New Roman', Times, serif;padding: 5px;cursor: pointer;"
                                     class="btn btn-secondary dropdown-toggle" href="#" role="button"
@@ -109,7 +101,6 @@
                                     aria-expanded="false">
                                     Sort by
                                 </a>
-
                                 <ul>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 
@@ -132,34 +123,7 @@
                                     </div>
                                 </ul>
                             </div>
-                            <!-- <div id="filter">
-                                <div class="d-flex flex-column">
-                                    <div class="filterContent">
-                                        <div class="d-flex filterItem">
-                                            <label for="max">Bahalidan ucuza</label>
-                                            <input name="price" id="max" type="radio">
-                                        </div>
-                                        <div class="d-flex filterItem">
-                                            <label for="min">Ucuzdan bahaliya</label>
-                                            <input name="price" id="min" type="radio">
-                                        </div>
-                                        <div class="d-flex filterItem">
-                                            <label for="abc">A-z...</label>
-                                            <input name="price" id="abc" type="radio">
-                                        </div>
-                                        <div class="d-flex filterItem">
-                                            <label for="cba">Z-a...</label>
-                                            <input name="price" id="cba" type="radio">
-                                        </div>
-                                        <div class="d-flex filterItem">
-                                            <label for="dflt">Default</label>
-                                            <input name="price" id="dflt" type="radio">
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div> -->
+                        
                         </div>
                         <div id="prolist">
                         </div>
@@ -182,9 +146,7 @@
                                         </path>
                                     </svg>
                                 </button>
-                            </form>
-                            <p class="cartp">Filter</p>
-                            
+                            </form>  
                             <p class="cartp">Categories</p>
                             <ul>
                                 <li><a href="">Americano (5) </a></li>

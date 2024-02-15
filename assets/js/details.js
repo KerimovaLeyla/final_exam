@@ -32,7 +32,6 @@ function getdetail() {
 
 getdetail();
 
-//   <input style="width: 60px; text-align: center; border-radius: 30px; border: 1px solid #D75732;" type="number" value="${item.count}" oninput="updateQuantity(${index}, this.value)">
 
 // shop.js
 const prolist = document.getElementById('prolist');
@@ -87,7 +86,6 @@ function addtobasket(id) {
     updateCartTotal();
     updateCartCount();
 
-    // Add the selected product to the cart display
     const selectedProduct = products.find(item => item.id == id);
     displayInCart(selectedProduct);
 }
@@ -120,25 +118,19 @@ function addtowishlist(id) {
 }
 
 function addtodetail(id) {
-    // Seçilmiş məhsulu tapmaq üçün "products" array-ındə axtarış edin
+  
     let selectedProduct = products.find(item => item.id == id);
 
-    // "detail" siyahısını əldə etmək və əgər yoxdursa boş bir array yaratmaq
     let detail = JSON.parse(localStorage.getItem('detail')) || [];
 
-    // Əgər bu məhsul "detail" siyahısında yoxdursa əlavə etmək
     if (!detail.some(item => item.id === selectedProduct.id)) {
-        // "count" atributunu çıxardaraq yalnızca seçilmiş məhsulu əlavə et
+   
         detail = [{ ...selectedProduct, count: undefined }];
-        // Yalnızca seçilmiş məhsulu əlavə et
-
-        // "detail" siyahısını yenidən localStorage-ə yazmaq
+    
         localStorage.setItem('detail', JSON.stringify(detail));
 
-        // Əlavə edilmiş məhsulu konsolda göstərmək üçün
         console.log('Selected product added to detail:', selectedProduct);
     } else {
-        // Əgər məhsul artıq "detail" siyahısında varsa, istədiyiniz başqa bir əməliyyatı burada yerinə yetirə bilərsiniz
         console.log('Selected product is already in detail:', selectedProduct);
     }
 }

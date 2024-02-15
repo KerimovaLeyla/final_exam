@@ -4,17 +4,29 @@
     box-sizing: border-box;
 }
 
+#WishlistPage {
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://gaspard.qodeinteractive.com/wp-content/uploads/2020/04/our-history-title-area-img.jpg') center/cover no-repeat fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Cormorant Garamond";
+    color: white;
+}
+
 table {
     width: 80%;
-    margin: 1rem auto;
+    margin: 30px auto;
     max-width: 100%;
     flex-wrap: wrap;
 
 }
 
 th {color: #d75732;
-    margin: 30px 30px 30px 30px;
-    padding: 20px 30px;
+    // margin: 30px 30px 30px 30px;
+    // padding: 20px 30px;
     background-color: #FAF3E1;
     font-family: "Quattrocento Sans";
     font-size: 18px;
@@ -31,7 +43,7 @@ td {
 }
 
 td,
-table {
+table {text-align: center;
     border: none;
     padding: 30px 0px;
     border-bottom: 1px solid #E6A347;
@@ -54,7 +66,7 @@ table {
         color: #fff;
         cursor: pointer;
         background-color: #E6A347;
-        padding: 10px 28px;
+        padding: 7px 4px;
         font-size: 15px;
         border-radius: 30px;
         border: 1px solid #E6A347;
@@ -72,13 +84,11 @@ table {
 }
 td
 {
-   
-    text-align: left;
-    width: 20rem;
+    text-align: center;
     overflow: hidden;
 
-    .img {
-        width: 20rem;
+    img {border-radius: 50%;
+        width: 5rem;
     }
 }
 

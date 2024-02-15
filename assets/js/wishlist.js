@@ -1,4 +1,3 @@
-
 const listProduct = document.getElementById('proWishlist')
 function tableGet() {
     listProduct.innerHTML = ''
@@ -39,7 +38,6 @@ function addtobasket(id) {
     updateCartTotal();
     updateCartCount();
 
-    // Add the selected product to the cart display
     const selectedProduct = products.find(item => item.id == id);
     displayInCart(selectedProduct);
 }

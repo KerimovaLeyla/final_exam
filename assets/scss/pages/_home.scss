@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-#carusel {
-    position: relative;
-    background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-    height: auto;
-}
-
-
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
@@ -19,7 +12,8 @@
 }
 
 .drpmenu {
-    background-color: #311D15;
+    background-color: #3b2a19;
+    ;
 
     a {
         color: white;
@@ -30,7 +24,6 @@
 
 header {
     width: 100%;
-    position: fixed;
     position: absolute;
     z-index: 1;
     background-color: transparent;
@@ -116,7 +109,7 @@ header {
 @media screen and (max-width:991px) {
     header {
         .navbar {
-            background-color: #f2ede8;
+            background-color: #3b2a19;
         }
 
         .navbar-light .navbar-nav .nav-link {
@@ -144,8 +137,8 @@ header {
 
 #caruselSec {
     height: auto;
+
     .corItem {
-        position: relative;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -156,6 +149,15 @@ header {
             color: white;
             font-family: "Cormorant Garamond";
             position: absolute;
+
+            h1 {
+                font-size: 60px;
+            }
+
+            p {
+                font-size: 25px;
+            }
+
 
             button {
                 cursor: pointer;
@@ -175,13 +177,32 @@ header {
 
 }
 
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
 
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
-.seven span {
-    color: white;
-    opacity: 0;
-    transform: translate(-150px, 0) scale(.3);
-    animation: leftRight .5s forwards;
+.caruselItemtext>* {
+    animation: slideInFromLeft 0.9s ease-in;
+}
+
+.caruselItemtext>*:nth-child(2) {
+    animation-delay: 0.9s;
+}
+
+.caruselItemtext>*:nth-child(2) {
+    animation-delay: 0.9s;
+}
+
+.caruselItemtext>*:nth-child(2) {
+    animation-delay: 0.4s;
 }
 
 
@@ -207,98 +228,11 @@ header {
     }
 }
 
-.animate {
-    font-size: 50px;
-}
-
-.animate span {
-    display: inline-block;
-}
-
-.animate span:nth-of-type(2) {
-    animation-delay: .05s;
-}
-
-.animate span:nth-of-type(3) {
-    animation-delay: .1s;
-}
-
-.animate span:nth-of-type(4) {
-    animation-delay: .15s;
-}
-
-.animate span:nth-of-type(5) {
-    animation-delay: .2s;
-}
-
-.animate span:nth-of-type(6) {
-    animation-delay: .25s;
-}
-
-.animate span:nth-of-type(7) {
-    animation-delay: .3s;
-}
-
-.animate span:nth-of-type(8) {
-    animation-delay: .35s;
-}
-
-.animate span:nth-of-type(9) {
-    animation-delay: .4s;
-}
-
-.animate span:nth-of-type(10) {
-    animation-delay: .45s;
-}
-
-.animate span:nth-of-type(11) {
-    animation-delay: .5s;
-}
-
-.animate span:nth-of-type(12) {
-    animation-delay: .55s;
-}
-
-.animate span:nth-of-type(13) {
-    animation-delay: .6s;
-}
-
-.animate span:nth-of-type(14) {
-    animation-delay: .65s;
-}
-
-.animate span:nth-of-type(15) {
-    animation-delay: .7s;
-}
-
-.animate span:nth-of-type(16) {
-    animation-delay: .75s;
-}
-
-.animate span:nth-of-type(17) {
-    animation-delay: .8s;
-}
-
-.animate span:nth-of-type(18) {
-    animation-delay: .85s;
-}
-
-.animate span:nth-of-type(19) {
-    animation-delay: .9s;
-}
-
-.animate span:nth-of-type(20) {
-    animation-delay: .95s;
-}
-
-.animate span:nth-of-type(21) {
-    animation-delay: 1s;
-}
 
 #coffeCulture {
     height: auto;
     padding: 30px 0px;
-    background-image: url(/assets/img/main-bg-pattern.png);
+    background-image: url('https://caffee.deliciosa.themerex.net/wp-content/uploads/2023/02/main-bg-pattern.png');
 
     img {
         max-width: 100%;
@@ -349,7 +283,7 @@ header {
 
 #perfectCoffe {
     padding: 30px 0px;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/img/new-img-02.jpg') center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://caffee.deliciosa.themerex.net/wp-content/uploads/2023/02/new-img-02.jpg') center/cover no-repeat fixed;
     text-align: center;
 
     .craft {
@@ -374,7 +308,7 @@ header {
 
     h1 {
         font-weight: 500;
-        font-size: 57.001px;
+        font-size: 50.001px;
         color: #f9f7f7;
         font-family: "Cormorant Garamond";
         width: 80%;
@@ -384,7 +318,7 @@ header {
         padding-bottom: 30px;
         margin-bottom: 30px;
         font-weight: 400;
-        font-size: 17px;
+        font-size: 15px;
         color: #cfc8b8;
         font-family: "Quattrocento Sans";
         letter-spacing: 0
@@ -595,6 +529,7 @@ header {
         h1 {
             font-family: "Bebas Neue";
             font-size: 40px;
+            margin: 30px;
         }
 
         p {
@@ -614,6 +549,7 @@ header {
         border: 1px solid rgb(223, 217, 217);
         border-radius: 10px;
         position: relative;
+        margin-bottom: 10px;
 
         img {
             cursor: pointer;
@@ -731,7 +667,7 @@ header {
     .coffeBeantwo {
         cursor: pointer;
         width: 250px;
-        margin-left: 30px;
+        margin-left: 15px;
         height: 250px;
         display: flex;
         align-items: center;
@@ -745,21 +681,24 @@ header {
     }
 
     .coffeBean {
-        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/img/image-356-840x1260.jpg') center/cover no-repeat;
+        margin-bottom: 10px;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://caffee.deliciosa.themerex.net/wp-content/uploads/2023/03/image-356-840x1260.jpg') center/cover no-repeat;
     }
 
     .coffeBeanone {
-        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/img/image-181-840x1260.jpg') center/cover no-repeat;
+        margin-bottom: 10px;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://caffee.deliciosa.themerex.net/wp-content/uploads/2020/04/image-181-840x1260.jpg') center/cover no-repeat;
     }
 
     .coffeBeantwo {
-        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/img/image-177-840x560.jpg') center/cover no-repeat;
+        margin-bottom: 10px;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://caffee.deliciosa.themerex.net/wp-content/uploads/2020/04/image-177-840x560.jpg') center/cover no-repeat;
     }
 }
 
 footer {
     padding: 30px 0px;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/img/new-bg-footer.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://caffee.deliciosa.themerex.net/wp-content/uploads/2020/05/new-bg-footer.jpg') center/cover no-repeat;
 
     img {
         max-width: 100%;
@@ -981,4 +920,201 @@ footer {
         }
     }
 
+}
+
+
+@media screen and (max-width:501px) {
+    #ourHistory {
+        .historyimglittle {
+            img {
+                max-width: 50%;
+
+            }
+        }
+    }
+}
+
+#ourHistory {
+    background: url('https://toolbar.qodeinteractive.com/_toolbar/assets/img/rbt-placeholder.jpg');
+    margin-bottom: 30px;
+    padding: 30px;
+
+    img {
+        max-width: 100%;
+    }
+
+    .historyimg {
+        position: relative;
+        padding: 30px;
+        margin-top: 30px;
+        display: flex;
+        align-items: end;
+        justify-content: flex-end;
+
+        .historyimglittle {
+            position: absolute;
+            margin-bottom: 30px;
+            right: -40px;
+
+            img {
+
+                margin-top: 30px;
+                padding-top: 30px;
+                animation: float 4s linear infinite;
+            }
+
+            @keyframes float {
+
+                0%,
+                100% {
+                    transform: translateY(0rem);
+                }
+
+                50% {
+                    transform: translateY(-7rem);
+                }
+            }
+        }
+    }
+
+    .historyText {
+        padding-left: 30px;
+        margin: 30px;
+
+        h1 {
+            padding: 30px 0px;
+            font-weight: 400;
+            font-size: 42px;
+            color: #0d0a47;
+            line-height: 49.14px;
+            margin: 30px 0px;
+            font-family: Caudex;
+        }
+
+        p {
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-size: 17px;
+            color: #727272;
+            line-height: 31.96px;
+            font-family: Catamaran;
+        }
+
+        button {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 12px;
+            cursor: pointer;
+            color: #051356;
+            border: solid #051356;
+            background-color: white;
+            line-height: 21.6px;
+            transform: uppercase;
+            font-family: Catamaran;
+            letter-spacing: 2.4px;
+            padding: 10px 30px;
+
+            &:hover {
+                background-color: #051356;
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:501px) {
+    #ourHistory {
+        .historyimglittle,.historyimglittleone {
+            img {
+                max-width: 50%;
+
+            }
+        }
+    }
+}
+#ourHistory {
+    background: url('https://toolbar.qodeinteractive.com/_toolbar/assets/img/rbt-placeholder.jpg');
+    margin-bottom: 30px;
+    padding: 30px;
+
+    img {
+        max-width: 100%;
+    }
+
+    .historyimg {
+        position: relative;
+        padding: 30px;
+        margin-top: 30px;
+        display: flex;
+        align-items: end;
+        justify-content: flex-end;
+
+        .historyimglittleone {
+            position: absolute;
+            margin-bottom: 30px;
+            left: -40px;
+
+            img {
+                margin-top: 30px;
+                padding-top: 30px;
+                animation: float 4s linear infinite;
+            }
+
+            @keyframes float {
+
+                0%,
+                100% {
+                    transform: translateY(0rem);
+                }
+
+                50% {
+                    transform: translateY(-7rem);
+                }
+            }
+        }
+    }
+
+    .historyText {
+        padding-left: 30px;
+        margin: 30px;
+
+        h1 {
+            padding: 30px 0px;
+            font-weight: 400;
+            font-size: 42px;
+            color: #0d0a47;
+            line-height: 49.14px;
+            margin: 30px 0px;
+            font-family: Caudex;
+        }
+
+        p {
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-size: 17px;
+            color: #727272;
+            line-height: 31.96px;
+            font-family: Catamaran;
+        }
+
+        button {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 12px;
+            cursor: pointer;
+            color: #051356;
+            border: solid #051356;
+            background-color: white;
+            line-height: 21.6px;
+            transform: uppercase;
+            font-family: Catamaran;
+            letter-spacing: 2.4px;
+            padding: 10px 30px;
+
+            &:hover {
+                background-color: #051356;
+                color: white;
+            }
+        }
+    }
 }

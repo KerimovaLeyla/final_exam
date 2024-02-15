@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    height: 100vh;
+    transition: .4s;
+
+}
+
+#prodactsAdd,#tablepro{
+
+   padding-top: 30px;
+
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+}
+
+.drpmenu {
+    background-color: #3b2a19;
+
+    a {
+        color: white;
+        font-family: "Quattrocento Sans";
+
+    }
+}
+.head {
+    width: 100%;
+    background-color: #311D15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+
+    a {
+        color: white;
+        transition: 0.5s;
+        position: relative;
+        font-size: 12px;
+        font-weight: 500;
+
+        &:hover {
+            color: $color-gold;
+
+            &::after {
+                opacity: 1;
+                transition: 1s;
+                width: 100%;
+            }
+        }
+
+        &::after {
+            content: "";
+            height: 2px;
+            position: absolute;
+            width: 0;
+            background-color: $color-gold;
+            left: 0;
+            bottom: 0;
+            opacity: 0;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: $color-white;
+        font-size: 17px;
+        margin-right: 20px;
+        font-family: Marcellus;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    .navbar {
+        width: 98%;
+        height: auto;
+        margin: auto;
+
+        .icon {
+            cursor: pointer;
+        }
+
+        .collapseDiv {
+            justify-content: flex-end;
+
+        }
+
+        .icon {
+            margin: 0px 20px;
+            color: $color-white;
+
+        }
+    }
+}
+
+.fa-solid {
+    margin: 0px 10px;
+}
+
+
+@media screen and (max-width:991px) {
+    header {
+        .navbar {
+            background-color: #3b2a19;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: $color-gold;
+            font-size: 15px;
+            margin-top: 20px;
+        }
+
+        nav .icon {
+            display: none;
+        }
+
+        .navbar-toggler-icon {
+            border: none;
+            color: $color-gold;
+        }
+
+        img {
+            width: 200px;
+            filter: grayscale(450px);
+        }
+
+    }
+}
+
+.input {
+    visibility: hidden;
+}
+
+.label {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background-color: lightgray;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.circle {
+    width: 20px;
+    background-color: white;
+    height: 20px;
+    border-radius: 50%;
+    top: 3px;
+    position: absolute;
+    left: 3px;
+    animation: toggleOff 0.4s linear forwards;
+}
+
+.input:checked+.label {
+    background-color: white;
+}
+
+.input:checked+.label .circle {
+    animation: toggleOn 0.4s linear forwards;
+    background-color: black;
+}
+
+@keyframes toggleOn {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(40px);
+    }
+}
+
+@keyframes toggleOff {
+    0% {
+        transform: translateX(40px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.formdiv {
+    #srcItem {
+        background-color: transparent;
+        width: 260px;
+        border: 2px solid #3b2a19;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 30px;
+    }
+
+    #inp {
+        all: unset;
+        caret-color: black;
+        font: 16px system-ui;
+        color: red;
+        height: 100%;
+        width: 100%;
+        padding: 6px 10px;
+
+        ::placeholder {
+            color: #fff;
+            opacity: 0.7;
+        }
+    }
+
+    button {
+        all: unset;
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+    }
+
+    svg {
+        color: grey;
+        fill: currentColor;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+
+    }
+}
+
+.formdivs {
+    form {
+        margin-top: 30px;
+        border: 1px solid #3b2a19;
+        padding: 10px;
+        box-shadow: 5px 10px;
+        input {
+            width: 100%;
+            font-family: Caudex;
+            margin-bottom: 5px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            border-bottom: 2px solid #3b2a19;
+
+
+        }
+
+        input[type=text]:hover {
+            box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+        }
+
+        input[type=text]:focus {
+            box-shadow: 0 0 5pt 2pt #D3D3D3;
+            outline-width: 0px;
+        }
+
+        button {
+            color: #fff;
+            cursor: pointer;
+            background-color: #E6A347;
+            padding: 7px 24px;
+            font-size: 15px;
+            border-radius: 30px;
+            border: 1px solid #E6A347;
+            transition: 1s;
+
+            &:hover {
+                border: 1px solid #9FA753;
+                color: white;
+                background-color: #9FA753;
+            }
+        }
+    }
+}

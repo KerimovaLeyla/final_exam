@@ -101,25 +101,14 @@ function addtowishlist(id) {
 }
 
 function addtodetail(id) {
-    // Seçilmiş məhsulu tapmaq üçün "products" array-ındə axtarış edin
     let selectedProduct = products.find(item => item.id == id);
 
-    // "detail" siyahısını əldə etmək və əgər yoxdursa boş bir array yaratmaq
     let detail = JSON.parse(localStorage.getItem('detail')) || [];
-
-    // Əgər bu məhsul "detail" siyahısında yoxdursa əlavə etmək
     if (!detail.some(item => item.id === selectedProduct.id)) {
-       // "count" atributunu çıxardaraq yalnızca seçilmiş məhsulu əlavə et
-detail = [{ ...selectedProduct, count: undefined }];
-// Yalnızca seçilmiş məhsulu əlavə et
-
-        // "detail" siyahısını yenidən localStorage-ə yazmaq
+        detail = [{ ...selectedProduct, count: undefined }];
         localStorage.setItem('detail', JSON.stringify(detail));
-
-        // Əlavə edilmiş məhsulu konsolda göstərmək üçün
         console.log('Selected product added to detail:', selectedProduct);
     } else {
-        // Əgər məhsul artıq "detail" siyahısında varsa, istədiyiniz başqa bir əməliyyatı burada yerinə yetirə bilərsiniz
         console.log('Selected product is already in detail:', selectedProduct);
     }
 }
@@ -208,9 +197,9 @@ addPage()
 function display(data) {
     prolist.innerHTML = ""
     data.forEach((item) => {
-        const box= document.createElement('div')
-        box.className='boxDiv col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'
-        box.innerHTML=`
+        const box = document.createElement('div')
+        box.className = 'boxDiv col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'
+        box.innerHTML = `
         <div class="proDiv">
         <img src="${item.image}" alt="">
         <div class="textDiv">
