@@ -38,6 +38,8 @@ function getproduct() {
         });
 }
 
+
+
 function updateCartTotal() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     let total = 0;
@@ -49,11 +51,14 @@ function updateCartTotal() {
     cartTotal.innerHTML = `<p>Total: $${total.toFixed(2)}</p>`;
 }
 
+
 function updateCartCount() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     let count = cart.reduce((sum, item) => sum + (item.count || 1), 0);
     cartCount.innerHTML = `<p>Products in Cart: ${count}</p>`;
 }
+
+
 
 function addtobasket(id) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -68,10 +73,10 @@ function addtobasket(id) {
     updateCartTotal();
     updateCartCount();
 
-    // Add the selected product to the cart display
     const selectedProduct = products.find(item => item.id == id);
-    displayInCart(selectedProduct);
+    displayInCart(selectedProduct); 
 }
+
 
 function displayInCart(product) {
     const cartDiv = document.querySelector('.cartTotal');

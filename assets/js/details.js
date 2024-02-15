@@ -1,9 +1,17 @@
-const proDetail = document.getElementById('proDetail');
+const prolist = document.getElementById('prolist');
+const cartTotal = document.querySelector('.cartTotal');
+const cartCount = document.querySelector('.cartCount');
+
+let limit = 8;
+let page = 1;
+let products = [];
 
 function getdetail() {
+    const proDetail = document.getElementById('proDetail');
     proDetail.innerHTML = '';
-    let detail = JSON.parse(localStorage.getItem('detail')) || []
-    detail.map((item, index) => {
+    let detail = JSON.parse(localStorage.getItem('detail')) || [];
+
+    detail.forEach((item, index) => {
         const boxs = document.createElement('div');
         boxs.className = 'bosxDiv row';
         boxs.innerHTML = `
@@ -13,41 +21,26 @@ function getdetail() {
                 </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-               
-                    <h4> ${item.name}</h4>
-                      <span ;
-                    ">$${item.price} </span>
-                    <p >${item.description}</p>
-                    <p >Aquia sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna aliquyam.erat, sed diam voluptua. At vero accusam et justo duo dolores et ea rebum. Stet clitain vidunt ut labore eirmod tempor invidunt magna aliquyam. Stet clitain vidunt ut labore.</p>                
-                    <div class="btnDiv">
-                    <a href="./cart.html"><button class="btnbuy" class="btns" onclick="addtobasket(${item.id})">Buy Now Coffe</button></a>  
-                        <button class="twobutton" onclick="addtowishlist(${item.id})"><i class="fa-regular fa-heart"></i></button>    
-                    </div>
-               
+                <h4>${item.name}</h4>
+                <span>$${item.price}</span>
+                <p>${item.description}</p>
+                <p>Aquia sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna aliquyam.erat, sed diam voluptua. At vero accusam et justo duo dolores et ea rebum. Stet clitain vidunt ut labore eirmod tempor invidunt magna aliquyam. Stet clitain vidunt ut labore.</p>
+                <div class="btnDiv">
+                    <a href="./cart.html"><button class="btnbuy btns" onclick="addtobasket(${item.id})">Buy Now Coffee</button></a>
+                    <button class="twobutton" onclick="addtowishlist(${item.id})"><i class="fa-regular fa-heart"></i></button>
+                </div>
             </div>
         `;
         proDetail.appendChild(boxs);
     });
 }
 
-getdetail();
-
-
-// shop.js
-const prolist = document.getElementById('prolist');
-const cartTotal = document.querySelector('.cartTotal');
-const cartCount = document.querySelector('.cartCount');
-
-let limit = 8;
-let page = 1;
-let products = [];
-
 function getproduct() {
     prolist.innerHTML = '';
     axios.get(`https://65680f6b9927836bd9740785.mockapi.io/swp102/product?page=${page}&limit=${limit}`)
         .then(res => {
             products = res.data;
-            products.map(item => {
+            products.forEach(item => {
                 const box = document.createElement('div');
                 box.className = 'boxDiv col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12';
                 box.innerHTML = `
@@ -57,8 +50,8 @@ function getproduct() {
                             <h4>${item.name}</h4>
                             <p>$${item.price}</p>
                         </div>
-                        <div class="btnDiv">      
-                            <button class="twobutton" onclick="addtowishlist(${item.id})"><i class="fa-regular fa-heart"></i></button>    
+                        <div class="btnDiv">
+                            <button class="twobutton" onclick="addtowishlist(${item.id})"><i class="fa-regular fa-heart"></i></button>
                             <button class="onebutton" onclick="addtobasket(${item.id})"><i class="fa-solid fa-cart-shopping"></i></button>
                             <a href="/details.html"><button class="threebutton" onclick="addtodetail(${item.id})"><i class="fa-solid fa-arrow-right"></i></button></a>
                         </div>
@@ -71,7 +64,6 @@ function getproduct() {
             console.error('Sorğu zamanı xəta:', error);
         });
 }
-
 
 function addtobasket(id) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -110,7 +102,7 @@ function addtowishlist(id) {
     let productItem = wishlist.find(item => item.id == id);
 
     if (productItem) {
-        alert('This product has already become a favorite');
+        alert('Bu məhsul artıq istək siyahısına əlavə olunub');
     } else {
         wishlist.push(products.find(item => item.id == id));
         localStorage.setItem('wishlist', JSON.stringify(wishlist));
@@ -118,21 +110,17 @@ function addtowishlist(id) {
 }
 
 function addtodetail(id) {
-  
     let selectedProduct = products.find(item => item.id == id);
-
     let detail = JSON.parse(localStorage.getItem('detail')) || [];
 
     if (!detail.some(item => item.id === selectedProduct.id)) {
-   
-        detail = [{ ...selectedProduct, count: undefined }];
-    
+        detail.push({ ...selectedProduct, count: undefined });
         localStorage.setItem('detail', JSON.stringify(detail));
-
-        console.log('Selected product added to detail:', selectedProduct);
+        console.log('Seçilmiş məhsul detaylara əlavə edildi:', selectedProduct);
     } else {
-        console.log('Selected product is already in detail:', selectedProduct);
+        console.log('Seçilmiş məhsul artıq detaylarda var:', selectedProduct);
     }
 }
 
+getdetail();
 getproduct();
