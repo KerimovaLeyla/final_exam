@@ -508,6 +508,20 @@ header nav .icon {
   letter-spacing: 0;
 }
 
+.drinkCoffe {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.drinkCoffe img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.drinkCoffe:hover img {
+  transform: scale(1.2);
+}
+
 #ourCoffe {
   height: auto;
   padding: 20px 15px;
@@ -2322,6 +2336,22 @@ footerOne .logo {
   font-family: "Cormorant Garamond";
   color: white;
   font-size: 20px;
+}
+
+.gallery_product {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.gallery_product img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.gallery_product:hover img {
+  transform: scale(1.5);
 }
 
 #galarySec {
